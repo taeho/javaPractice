@@ -34,7 +34,7 @@ package com.amikth.codility.lesson1;
 
 public class BinaryGap {
 	public static void main(String[] args){ 
-		int a = 325;
+		int a = 1041;
 		int res = 0;
 		
 		res = solution(a);
@@ -45,17 +45,17 @@ public class BinaryGap {
 	public static int solution(int N) {
 		int max = 0;
 		int cnt = 0;
-		int k=0;
+		//int k=0;
 		String result = "";
 		result = Integer.toBinaryString(N);
 		System.out.println("rr = " + result + " // result.length()= " + result.length());
 		for(int i=0; i < result.length(); i++) { 
-			k++;
+			//k++;
 			if(result.charAt(i) == '0') {
 				cnt++; 
-				if( (result.length()  == k ) && (cnt > max)   ) {
-					max = cnt;
-				} 
+				//if( (result.length()  == k ) && (cnt > max)   ) {
+				//	max = cnt;
+				//} 
 			} else {
 				if(cnt > max) {
 					max = cnt;
